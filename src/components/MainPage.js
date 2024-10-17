@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header.js"
 
 function MainPage() {
     return (
@@ -11,10 +12,10 @@ function MainPage() {
         //      - Skills
         //      - Contact
         //      - Linkedin, GitHub
+        <Header />
 
         // Body
         // Footer
-        <p>This is a test</p>
     );
 }
 
