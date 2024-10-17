@@ -1,21 +1,18 @@
 import React from "react";
 import Header from "./Header.js"
+import Body from "./Body.js"
+import "./MainPage.css"
 
 function MainPage() {
     return (
-        // Header
-        // Name:    John Divinagracia
-        // Tagline: Aspiring Software Developer
-        // Nav:
-        //      - About Me
-        //      - Projects
-        //      - Skills
-        //      - Contact
-        //      - Linkedin, GitHub
-        <Header />
-
-        // Body
-        // Footer
+        <main className="main-page">
+            <Header />
+            <Body />
+            {/*
+            // Body
+            // Footer
+            */}
+        </main>
     );
 }
 
