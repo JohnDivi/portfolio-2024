@@ -53,6 +53,16 @@ function Header() {
             <section id="me">
                 <h1>John Divinagracia</h1>
                 <h2>CS Student at MacEwan University</h2>
+                <p>
+                    Hey there, thanks for checking out my portfolio! As this
+                    portfolio was being made, I was learning React.JS
+                    at the same time. Creating new projects, such as this
+                    portfolio, is how I learn new languages or technologies.
+                    The best way for me to learn is to learn as I work. Thanks
+                    again for taking the time looking over my portfolio! I
+                    hope these projects showcase my creativity and passion in 
+                    development.
+                </p>
             </section>
         </header>
     );
