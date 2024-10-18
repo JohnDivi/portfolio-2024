@@ -17,7 +17,7 @@ function Header() {
         //      - Linkedin, GitHub
         <header className="header">
             <nav className="navbar">
-                <ul>
+                <ul className="left-nav">
                     <li>
                         <a href="#"><img src={homeIcon} alt="Home Icon" class="nav-icon"/></a>
                         {/* 
@@ -26,25 +26,28 @@ function Header() {
                         */}
                     </li>
                     <li>
-                        <a>ABOUT</a>
+                        <a>About</a>
                     </li>
                     <li>
-                        <a>PROJECTS</a>
+                        <a>Projects</a>
                     </li>
                 </ul>
-
-                <section className="right-side">
-                    <a href="https://www.linkedin.com/in/john-divinagracia-49673818a/" target="_blank">
-                        <img src={linkedinIcon} alt="LinkedIn Icon" class="nav-icon"/>
-                        {/*
-                        Attribution
-                        <a target="_blank" href="https://icons8.com/icon/8808/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                        */}
-                    </a>    
-                    <a href="https://github.com/JohnDivi" target="_blank">
-                        <img src={githubIcon} alt="GitHub Icon" class="nav-icon"/>
-                    </a>
-                </section>
+                <ul className="right-nav">
+                    <li>
+                        <a href="https://www.linkedin.com/in/john-divinagracia-49673818a/" target="_blank">
+                            <img src={linkedinIcon} alt="LinkedIn Icon" class="nav-icon"/>
+                            {/*
+                            Attribution
+                            <a target="_blank" href="https://icons8.com/icon/8808/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                            */}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JohnDivi" target="_blank">
+                            <img src={githubIcon} alt="GitHub Icon" class="nav-icon"/>
+                        </a>
+                    </li>
+                </ul>
             </nav>
             
             <section id="me">
