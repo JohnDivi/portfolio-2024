@@ -14,7 +14,6 @@ function ProjectCard({name, video, desc}) {
                 <p>
                     <iframe width="420" height="315" src={video}/>
                 </p>
-                
             );
         }
     };

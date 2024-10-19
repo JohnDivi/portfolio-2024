@@ -4,6 +4,7 @@
     color: white;
     overflow: hidden;
     background: linear-gradient(to bottom, #76a8b0, #c7bab9);
+    text-shadow: 1px 1px 2px black;
 }
 
 .nav-icon {

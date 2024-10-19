@@ -100,7 +100,7 @@ function Header() {
                         </p>
                         <section id="about-portfolio-footer">
                             <p>
-                                More about me below!
+                                My projects are just down below
                             </p>
                         </section>
                     </section>
