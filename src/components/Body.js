@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
 import "./Body.css"
 
 function Body() {
@@ -7,15 +8,31 @@ function Body() {
             {/* 
             Body will contain About me and Projects
             */}
+            <section id="projects">
+                <h1>Projects</h1>
+                <section id="projects-carousel">
+
+                    <ProjectCard 
+                        name="Test project"
+                        video="N/A"
+                        desc="Test desc."
+                    />
+
+                    <ProjectCard 
+                        name="Test project"
+                        video="https://www.youtube.com/embed/PfQT62d3RGw?si=wtUwQnQ-sLTQi6wD"
+                        desc="Test desc."
+                    />
+
+                </section>
+            </section>
             <section id="about-me">
                 <h1>About me</h1>
                 {/* 
-                Contains skills
+                Skills
+                More about Skills
+                Life (maybe)
                 */}
-            </section>
-
-            <section id="projects">
-                <h1>Projects</h1>
             </section>
         </main>
     );
