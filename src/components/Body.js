@@ -86,31 +86,39 @@ function Body() {
                 <div id="about-me-info">
                     <section id="about-me-skills">
                         <h2>Skills</h2>
-                        <h3>Operating Systems</h3>
-                        <ul>
-                            <li>Linux</li>
-                            <li>Windows</li>
-                        </ul>
-                        <h3>Programming</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>C/C++</li>
-                            <li>C#</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                            <li>Kotlin</li>
-                            <li>SQL</li>
-                            <li>React.JS</li>
-                        </ul>
-                        <h3>Other</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Visual Studio</li>
-                            <li>PyCharm</li>
-                            <li>Android Studio</li>
-                            <li>MS Office</li>
-                        </ul>
+                        <div id="skills-container">
+                            <div id="os">
+                                <h3>Operating Systems</h3>
+                                <ul>
+                                    <li>Linux</li>
+                                    <li>Windows</li>
+                                </ul>
+                            </div>
+                            <div id="programming">
+                                <h3>Programming</h3>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>C/C++</li>
+                                    <li>C#</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML/CSS</li>
+                                    <li>Kotlin</li>
+                                    <li>SQL</li>
+                                    <li>React.JS</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Other</h3>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>GitHub</li>
+                                    <li>Visual Studio</li>
+                                    <li>PyCharm</li>
+                                    <li>Android Studio</li>
+                                    <li>MS Office</li>
+                                </ul>
+                            </div>
+                        </div>
                     </section>
                     <section id="about-me-skills-more">
                         <h2>More about Skills</h2>
@@ -154,7 +162,7 @@ function Body() {
                             in my career. My end goal is to use my love for
                             Astronomy and Computer Science to help the
                             advancement of technology to bring humanity into
-                            the stars.
+                            the stars... cheesy, I know!
                         </p>
                     </section>
                 </div>
