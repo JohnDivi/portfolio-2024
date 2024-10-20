@@ -83,11 +83,81 @@ function Body() {
 
             <section id="about-me">
                 <h1>About me</h1>
-                {/* 
-                Skills
-                More about Skills
-                Life (maybe)
-                */}
+                <div id="about-me-info">
+                    <section id="about-me-skills">
+                        <h2>Skills</h2>
+                        <h3>Operating Systems</h3>
+                        <ul>
+                            <li>Linux</li>
+                            <li>Windows</li>
+                        </ul>
+                        <h3>Programming</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C/C++</li>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>Kotlin</li>
+                            <li>SQL</li>
+                            <li>React.JS</li>
+                        </ul>
+                        <h3>Other</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Visual Studio</li>
+                            <li>PyCharm</li>
+                            <li>Android Studio</li>
+                            <li>MS Office</li>
+                        </ul>
+                    </section>
+                    <section id="about-me-skills-more">
+                        <h2>More about Skills</h2>
+                        <h3>Programming Skills</h3>
+                        <p> I have most of my experience with Python,
+                            followed by C/C++, then JavaScript. Most
+                            of my Python experience comes from solving
+                            algorithms on sites like LeetCode or HackerRank.
+                            Practically, in terms of the number of projects, 
+                            I have the most in C/C++. I enjoy JavaScript as it
+                            enables me to create applications that is accessible
+                            almost anywhere, but it is one of my least preferred
+                            preferences.
+                        </p>
+                        <h3>Other Skills</h3>
+                        <p> I use a Windows computer at home. Most of my Linux
+                            experience comes from the usage of a VM for my classes.
+                            I am very comfortable in the usage of Linux from the
+                            amount of classes that require it (Security and Networks
+                            classes to name a few). Speaking of classes, most of my
+                            Git and GitHub experience comes from the group projects
+                            we were tasked on (Software Engineering and Relational
+                            Databases, to name a few once again). Visual Studio is
+                            my most used productivity tool. I enjoy
+                            the—in my opinion—ease of use and interface compared to
+                            other editors.
+
+                        </p>
+                    </section>
+                    <section id="about-me-life">
+                        <h2>Who I am</h2>
+                        <p> I decided to pursue Computer Science because I enjoy
+                            the thought of solving problems, especially with code.
+                            The feeling of seeing the correct answers pop up with
+                            my own code is a sort of happiness that is hard
+                            to explain. You may have wondered why I had a picture
+                            of the night sky at the start, and it's not only
+                            because I took the picture, but also because I am
+                            quite fond of astronomy. I am taking a minor in
+                            Planetary Physics, which I hope to use some time
+                            in my career. My end goal is to use my love for
+                            Astronomy and Computer Science to help the
+                            advancement of technology to bring humanity into
+                            the stars.
+                        </p>
+                    </section>
+                </div>
             </section>
         </main>
     );

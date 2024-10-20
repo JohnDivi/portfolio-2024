@@ -23,7 +23,7 @@ function Header() {
             const elementPos = element.getBoundingClientRect().top + window.scrollY;
             
             // This is the position of the element + 1rem
-            const offset = elementPos - heightOfElement;
+            const offset = elementPos - 2*heightOfElement;
 
             window.scrollTo({
                 top: offset,
