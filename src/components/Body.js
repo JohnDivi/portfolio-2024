@@ -6,20 +6,42 @@ function Body() {
 
     // Create all projects here
     const projectsList = [
-        {  
-            name: "Konane AI",
-            video: "N/A",
-            desc: "Test project description for Konane AI"
-        },
         {
             name: "2D Top-Down Shooter",
             video: "https://www.youtube.com/embed/uwNPpsw8rg8?si=rfzxIkfDoBCAFKp-",
-            desc: "Test project description for 2D Top-Down Shooter"
+            desc: `This is the first game I created that was made from scratch. 
+            You control a square, and enemies spawn in all directions. 
+            The enemies get faster the more of them you destroy. 
+            This project was created using C++, SFML (A C++ library), Git,
+            and Visual Studio.`,
+            repoLink: "https://github.com/JohnDivi/GameSFML"
+        },
+        {  
+            name: "Konane AI",
+            video: "N/A",
+            desc: `In a group project, I helped implement a Minimax agent for
+            Konane, also known as "Hawaiian Checkers". My responsibilites were
+            to implement the algorithm for the Minimax agent that utilized
+            bitboards. In the middle of the game, the number of possible moves
+            increase exponentially, so we set a depth limit of 5 to stay within
+            the time frame of 30 seconds when calculating the best move. However,
+            upon learning about "Iterative Deepening Search", we moved from using a 
+            depth limit to exploiting the time limit. Doing this, we were able
+            to increase the depth of its search at the start of the game by up
+            to 8 levels!
+            This project was created using C, Git, and Visual studio.`,
+            repoLink: "https://github.com/PenutButer/KonaneBot"
         },
         {
             name: "3D Shooter",
             video: "https://www.youtube.com/embed/PfQT62d3RGw?si=8Gxc0jJGEa0DIBmn",
-            desc: "Test project description for 3D Shooter"
+            desc: `The final project for my "Introduction to Computer Graphics"
+            class. You can think of this as an "upgraded" version of my 2D
+            shooter. This project took me a while, especially since I had to
+            implement the math of lighting myself. 
+            This project was created using JavaScript, WebGL, GLSL, HTML/CSS,
+            and Visual Studio Code`,
+            repoLink: "https://github.com/JohnDivi/3d-shooter"
         },
     ];
     const [activeIndex, setActiveIndex] = useState(0);
@@ -34,17 +56,6 @@ function Body() {
         );
     };
 
-    const getAdjacent = (by) => {
-        let retIndex = activeIndex + by;
-        if (retIndex < 0) {
-            return (projectsList.length-1);
-        } else if (retIndex >= projectsList.length) {
-            return 0;
-        } else {
-            return retIndex;
-        }
-    };
-
     return (
         <main className="main-body">
             {/* 
@@ -54,21 +65,18 @@ function Body() {
                 <h1>Projects</h1>
                 <section id="projects-carousel">
                     <button onClick={prevSlide}>&lt;</button>
-                    {/* <ProjectCard
-                        name={projectsList[getAdjacent(1)].name}
-                        video={projectsList[getAdjacent(1)].video}
-                        desc={projectsList[getAdjacent(1)].desc}
-                    /> */}
-                    <ProjectCard
-                        name={projectsList[activeIndex].name}
-                        video={projectsList[activeIndex].video}
-                        desc={projectsList[activeIndex].desc}
-                    />
-                    {/* <ProjectCard
-                        name={projectsList[getAdjacent(-1)].name}
-                        video={projectsList[getAdjacent(-1)].video}
-                        desc={projectsList[getAdjacent(-1)].desc}
-                    /> */}
+                    {projectsList.map((project, index) => {
+                        return (
+                        <div className={activeIndex === index ? 'card active' : 'card'}>
+                            <ProjectCard
+                            name={project.name}
+                            video={project.video}
+                            desc={project.desc}
+                            repoLink={project.repoLink}
+                        />
+                        </div>
+                        )
+                    })}
                     <button onClick={nextSlide}>&gt;</button>
                 </section>
             </section>

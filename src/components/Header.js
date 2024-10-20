@@ -19,18 +19,11 @@ function Header() {
             // First get the navbars height
             const heightOfElement = elementOffset.getBoundingClientRect().height;
             
-            // Then get the 'rem' size in pixels
-            const remOffset = parseFloat(getComputedStyle(document.documentElement).fontSize);
-            
-            // The total of navbar height + rem size
-            const total = heightOfElement + remOffset;
-            
-
             // Get position of element that was passed in relative to our current scroll
             const elementPos = element.getBoundingClientRect().top + window.scrollY;
             
             // This is the position of the element + 1rem
-            const offset = elementPos - total;
+            const offset = elementPos - heightOfElement;
 
             window.scrollTo({
                 top: offset,
